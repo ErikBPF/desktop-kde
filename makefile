@@ -7,6 +7,6 @@ encrypt-files:
 ansible-pull:
 	echo ${VAULT_PASS} >> vault_pass ;\
 	echo ${BECOME_PASS} >> become_pass ;\
-	ansible-pull --vault-password-file vault_pass  --become-password-file become_pass -U https://github.com/ErikBPF/ansible.git ;\
+	ansible-pull --vault-password-file vault_pass  --become-password-file become_pass -U https://github.com/ErikBPF/desktop-kde.git ;\
 	rm vault_pass ;\
 	rm become_pass
