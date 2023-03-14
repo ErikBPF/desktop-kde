@@ -19,7 +19,6 @@
       - unixodbc
       - azure-cli-bin
       - visual-studio-code-insiders-bin
-      - baobab
       - dnsmasq
       - openssh
       - dhclient
