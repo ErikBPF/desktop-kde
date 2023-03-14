@@ -1,0 +1,46 @@
+- name: install wm packages and update cache
+  tags:
+    - full-install
+    - light-install
+    - packages
+  kewlfft.aur.aur:
+    name:
+      - qtile
+      - dunst
+      - rofi
+      - betterlockscreen
+      - feh
+      - arc-gtk-theme
+      - vimix-cursors
+      - tela-circle-icon-theme-git
+      - pavucontrol
+      - gnome-ssh-askpass3
+      - systemd-ssh-agent
+      - xorg
+      - lightdm
+      - lightdm-slick-greeter
+      - pipewire-alsa
+      - gst-libav
+      - gst-plugins-ugly
+      - gst-plugins-bad
+      - system-config-printer
+      - arc-gtk-theme
+      - arc-icon-theme
+      - file-roller
+      - nemo-fileroller
+      - gparted
+      - pavucontrol
+      - baobab
+      - xreader
+      - xidlehook
+      - lxsession
+      - network-manager-applet
+      - pa-applet-git
+      - blueman
+      - brightnessctl
+      - xdg-user-dirs
+      - arandr
+    use: yay
+    state: present
+    update_cache: yes
+  ignore_errors: false

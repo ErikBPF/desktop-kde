@@ -1,0 +1,33 @@
+- name: install packages and update cache
+  tags:
+    - full-install
+    - light-install
+    - packages
+  kewlfft.aur.aur:
+    name:
+      - qtile
+      - dunst
+      - rofi
+      - betterlockscreen
+      - feh
+      - kubectx
+      - dashbinsh
+      - unixodbc
+      - find-the-command
+      - ttf-meslo-nerd-font-powerlevel10k
+      - blueman
+      - arc-gtk-theme
+      - vimix-cursors
+      - tela-circle-icon-theme-git
+      #- nerd-fonts-fira-code
+      - arc-gtk-theme
+      - arc-icon-theme
+      - file-roller
+      - nemo-fileroller
+      - pavucontrol
+      - baobab
+      - xreader
+    use: yay
+    state: present
+    update_cache: yes
+  ignore_errors: false
