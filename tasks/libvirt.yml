@@ -21,8 +21,8 @@
     name:
       - qemu-base
       - libvirt
-      - virt-manager
-      - spice-vdagent
+      # - virt-manager
+      # - spice-vdagent
     state: present
     update_cache: false
   become: true
